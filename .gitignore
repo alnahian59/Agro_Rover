@@ -1,0 +1,97 @@
+# ================================
+
+# Smart Agro Rover - Git Ignore
+
+# ================================
+
+# OS files
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VS Code
+
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# PlatformIO
+
+.pio/
+.piolibdeps/
+.clangd/
+
+# Arduino
+
+*.hex
+*.elf
+*.bin
+*.eep
+*.map
+
+# Build files
+
+build/
+dist/
+out/
+
+# Python
+
+**pycache**/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Node.js
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment variables
+
+.env
+.env.local
+.env.*.local
+
+# Secrets
+
+secrets.h
+credentials.h
+config_private.h
+
+# Logs
+
+*.log
+
+# Temporary files
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE files
+
+.idea/
+*.iml
+
+# Generated files
+
+coverage/
+.cache/
+
+# Local configuration
+
+local_config/
+
+```
+```
