@@ -16,7 +16,7 @@ Testing is performed progressively.
 * [ ] Temperature
 * [ ] Humidity
 * [ ] Ultrasonic distance
-* [ ] Battery voltage
+* [ ] Battery voltage 
 
 ## Agricultural Tests
 
