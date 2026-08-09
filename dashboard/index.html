@@ -1,0 +1,292 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Smart Agro Rover Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header>
+
+    <div>
+
+        <h1>🌱 Smart Agro Rover</h1>
+
+        <p>Agricultural Robotics Control Center</p>
+
+    </div>
+
+    <div
+        id="connectionStatus"
+        class="status offline"
+    >
+        ● OFFLINE
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- SYSTEM STATUS -->
+
+    <section class="dashboard-grid">
+
+        <div class="card">
+
+            <h3>🌡️ Temperature</h3>
+
+            <strong id="temperature">
+                -- °C
+            </strong>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>💧 Soil Moisture</h3>
+
+            <strong id="soilMoisture">
+                -- %
+            </strong>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>📡 Distance</h3>
+
+            <strong id="distance">
+                -- cm
+            </strong>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🤖 Mode</h3>
+
+            <strong id="mode">
+                MANUAL
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- ROVER CONTROL -->
+
+    <section class="panel">
+
+        <h2>🛞 Rover Control</h2>
+
+        <div class="controls">
+
+            <button
+                onclick="sendCommand('forward')"
+                class="control-button"
+            >
+                ▲
+                <span>Forward</span>
+            </button>
+
+
+            <div class="middle-controls">
+
+                <button
+                    onclick="sendCommand('left')"
+                    class="control-button"
+                >
+                    ◀
+                    <span>Left</span>
+                </button>
+
+
+                <button
+                    onclick="sendCommand('stop')"
+                    class="stop-button"
+                >
+                    ■
+                    <span>STOP</span>
+                </button>
+
+
+                <button
+                    onclick="sendCommand('right')"
+                    class="control-button"
+                >
+                    ▶
+                    <span>Right</span>
+                </button>
+
+            </div>
+
+
+            <button
+                onclick="sendCommand('backward')"
+                class="control-button"
+            >
+                ▼
+                <span>Reverse</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- AGRICULTURAL CONTROL -->
+
+    <section class="panel">
+
+        <h2>🌾 Agricultural Operations</h2>
+
+        <div class="operation-grid">
+
+            <div class="operation">
+
+                <h3>🌱 Seed System</h3>
+
+                <button
+                    onclick="sendCommand('seed')"
+                >
+                    Release Seed
+                </button>
+
+            </div>
+
+
+            <div class="operation">
+
+                <h3>💧 Water Pump</h3>
+
+                <button
+                    onclick="sendCommand('water_on')"
+                >
+                    ON
+                </button>
+
+                <button
+                    onclick="sendCommand('water_off')"
+                    class="danger"
+                >
+                    OFF
+                </button>
+
+            </div>
+
+
+            <div class="operation">
+
+                <h3>🧪 Medicine Spray</h3>
+
+                <button
+                    onclick="sendCommand('medicine_on')"
+                >
+                    ON
+                </button>
+
+                <button
+                    onclick="sendCommand('medicine_off')"
+                    class="danger"
+                >
+                    OFF
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MODE -->
+
+    <section class="panel">
+
+        <h2>⚙️ Operating Mode</h2>
+
+        <button
+            onclick="sendCommand('manual')"
+        >
+            Manual Mode
+        </button>
+
+        <button
+            onclick="sendCommand('auto')"
+        >
+            Automatic Mode
+        </button>
+
+    </section>
+
+
+    <!-- SENSOR MONITOR -->
+
+    <section class="panel">
+
+        <h2>📊 Rover Monitoring</h2>
+
+        <div class="monitor-grid">
+
+            <div>
+                <span>Water Pump</span>
+                <strong id="waterPump">
+                    OFF
+                </strong>
+            </div>
+
+            <div>
+                <span>Medicine Pump</span>
+                <strong id="medicinePump">
+                    OFF
+                </strong>
+            </div>
+
+            <div>
+                <span>Seed System</span>
+                <strong id="seedSystem">
+                    READY
+                </strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    Smart Agro Rover • ESP32 Agricultural Robotics Platform
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
+```
