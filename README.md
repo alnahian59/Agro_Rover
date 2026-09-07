@@ -4,6 +4,8 @@ An ESP32-based agricultural rover designed to automate essential farming operati
 
 The rover can be controlled and monitored through a **web-based dashboard**, allowing the operator to control movement, manage agricultural operations, and monitor important sensor data in real time.
 
+![img alt](https://github.com/alnahian59/Agro_Rover/blob/e16756b3cfdd59f68a5d8c72851e5c925d7d7044/demo.png)
+
 ---
 
 ## 🚜 Project Overview
